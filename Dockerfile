@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:2.7-alpin
 
 WORKDIR /usr/src/app
 COPY ./techtrends ./
