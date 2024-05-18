@@ -1,0 +1,38 @@
+## Docker commands used to build the application 
+docker built . -t techtrends
+
+## Docker commands used to run the application
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+docker container logs dreamy_dhawan
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug:2024-05-18 13:27:11,959,  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug:2024-05-18 13:27:11,959,  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2024-05-18 13:28:56,790, 10.9.0.42 - - [18/May/2024 13:28:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:28:56,915, 10.9.0.42 - - [18/May/2024 13:28:56] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:28:57,300, 10.9.0.42 - - [18/May/2024 13:28:57] "GET /favicon.ico HTTP/1.1" 404 -
+DEBUG:root:2024-05-18 13:29:45,631, Article 2020 CNCF Annual Report retrieved!
+INFO:werkzeug:2024-05-18 13:29:45,636, 10.9.0.42 - - [18/May/2024 13:29:45] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:29:45,708, 10.9.0.42 - - [18/May/2024 13:29:45] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2024-05-18 13:29:48,710, 10.9.0.42 - - [18/May/2024 13:29:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:29:48,783, 10.9.0.42 - - [18/May/2024 13:29:48] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:root:2024-05-18 13:29:49,950, Article CNCF Cloud Native Interactive Landscape retrieved!
+INFO:werkzeug:2024-05-18 13:29:49,952, 10.9.0.42 - - [18/May/2024 13:29:49] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:29:50,015, 10.9.0.42 - - [18/May/2024 13:29:50] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2024-05-18 13:29:51,941, 10.9.0.42 - - [18/May/2024 13:29:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:29:52,005, 10.9.0.42 - - [18/May/2024 13:29:52] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2024-05-18 13:29:53,187, 10.9.0.42 - - [18/May/2024 13:29:53] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:29:53,251, 10.9.0.42 - - [18/May/2024 13:29:53] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:root:2024-05-18 13:30:17,770, Article This is a New Post created!
+INFO:werkzeug:2024-05-18 13:30:17,771, 10.9.0.42 - - [18/May/2024 13:30:17] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:2024-05-18 13:30:17,843, 10.9.0.42 - - [18/May/2024 13:30:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2024-05-18 13:30:17,973, 10.9.0.42 - - [18/May/2024 13:30:17] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:2024-05-18 13:31:01,034, 10.9.0.42 - - [18/May/2024 13:31:01] "GET /metrics HTTP/1.1" 200 -
